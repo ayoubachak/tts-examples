@@ -1,0 +1,14 @@
+curl --request POST \
+  --url 'https://api.elevenlabs.io/v1/text-to-speech/onwK4e9ZLuTAKqWW03F9?optimize_streaming_latency=1&output_format=mp3_44100_128' \
+  --header 'Content-Type: application/json' \
+  --header 'xi-api-key: 4d02f07f1aa0ff0b5c12e208a9f69571' \
+  --data '{
+  "text": "Did you know that honeybees, a vital part of our agricultural ecosystem, are responsible for pollinating approximately one-third of the food crops we consume? These industrious insects play a crucial role in the growth of many fruits, vegetables, and nuts, contributing to both biodiversity and food security. Interestingly, a single bee colony can pollinate up to 300 million flowers each day. As they transfer pollen from one bloom to another, bees not only help in the reproduction of plants but also enhance the quality and size of the crops. Protecting these essential pollinators is critical for sustaining our natural food sources.",
+  "model_id": "eleven_multilingual_v2",
+  "voice_settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+  }
+}'
